@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Unit Converter</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<h1>Unit Converter</h1>
+	<form>
+		<label>Enter a value:</label>
+		<input type="number" id="inputValue" placeholder="Enter a value" required>
+
+		<label>Select a unit to convert from:</label>
+		<select id="fromUnit" required>
+			<option value="">Select a unit</option>
+			<option value="cm">Centimeter (cm)</option>
+			<option value="m">Meter (m)</option>
+			<option value="km">Kilometer (km)</option>
+			<option value="in">Inch (in)</option>
+			<option value="ft">Foot (ft)</option>
+			<option value="yd">Yard (yd)</option>
+			<option value="mi">Mile (mi)</option>
+		</select>
+
+		<label>Select a unit to convert to:</label>
+		<select id="toUnit" required>
+			<option value="">Select a unit</option>
+			<option value="cm">Centimeter (cm)</option>
+			<option value="m">Meter (m)</option>
+			<option value="km">Kilometer (km)</option>
+			<option value="in">Inch (in)</option>
+			<option value="ft">Foot (ft)</option>
+			<option value="yd">Yard (yd)</option>
+			<option value="mi">Mile (mi)</option>
+		</select>
+
+		<button type="button" onclick="convert()">Convert</button>
+
+		<div class="result" id="result"></div>
+	</form>
+
+	<script src="script.js"></script>
+</body>
+</html>
